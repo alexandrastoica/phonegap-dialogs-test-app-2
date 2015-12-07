@@ -28,7 +28,7 @@ function createDialog() {
 function dialogDismissed(buttonIndex) {
 	
 	if(buttonIndex==1) {
-        
+
         new Toast({content: "Take a break and eat some food", duration: 3000});
         createNotification();
 
@@ -44,7 +44,7 @@ function createNotification() {
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 30000); //delayed time
+    var notificationTime = new Date(currentTime + 3000); //delayed time
     			
     //
     //setup notification
@@ -53,8 +53,7 @@ function createNotification() {
     	id: 		1,
         title: 		"Hey you",
         message: 	"Get back to work",
-        date: 		notificationTime, 
-        badge: 		notification_count++
+        at: 		notificationTime
    	});
     
 }
