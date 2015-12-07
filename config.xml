@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Dialog Demo</name>
+
+    <description>
+        A dialog demonstration application using LocalNavigation plugin for iOS 9.
+    </description>
+
+    <author href="http://alexandrastoica.co.uk" email="alexandra.stoica95@yahoo.com">
+        Alexandra Stoica
+    </author>
+
+    <gap:plugin name="org.apache.cordova.dialogs"/>
+    <plugin name="de.appplant.cordova.plugin.local-notification-ios9-fix" spec="0.8.2" source="pgb" />
+
+</widget>
